@@ -1,0 +1,28 @@
+h2 {
+    color: darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#para {
+    line-height: 25px;
+}
+
+#link {
+    text-decoration: none;
+}
+
+#link:hover {
+    text-decoration: underline;
+}
+
+img {
+    float: left;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}

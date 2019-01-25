@@ -1,0 +1,13 @@
+h1 {
+    color: darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#para {
+    line-height: 25px;
+}
+
+#link {
+    text-decoration: none
+}

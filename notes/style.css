@@ -1,0 +1,14 @@
+h1, span {
+    color: darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#para {
+    line-height: 25px;
+}
+
+#greenDiv > h1 {
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
