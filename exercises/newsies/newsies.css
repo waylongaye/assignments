@@ -23,3 +23,9 @@ h4 {
 p {
     font-family: 'Italiana', serif;
 }
+
+img {
+    float: left;
+    height: 60%;
+    width: 60%;
+}
