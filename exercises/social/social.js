@@ -1,11 +1,12 @@
 var superhero = {
     heroName: "Authority",
-    powerLevel: 96,
+    powerLevel: 92,
     superpowers: ["invulnerability", "super speed", "super strength", "regeneration"],
     weaknesses: ['water', 'electricity', 'extreme heat'],
-    authorityVillains: [{
+    authorityVillains: [
+        {
             villainName: "Animal",
-            powerLevel: 85,
+            powerLevel: 89,
             attributes: [
                 {
                     superpowers: ["animal instinct", "claws", "shapeshifting"],
@@ -36,7 +37,7 @@ var superhero = {
         },
         {
             villainName: "Astronaut",
-            powerLevel: 91,
+            powerLevel: 93,
             attributes: [
                 {
                     superpowers: ["super intellect", "gravity control"],
@@ -47,18 +48,19 @@ var superhero = {
     ],
     battleResults : function(){
         
-        for(var i = 0; i < superhero.authorityVillains.powerLevel.length; i++){
-            
-            if(superhero.powerLevel[0] > superhero.authorityVillains.powerLevel[i]){
-                return "test"
+        for(var i = 0; i < superhero.authorityVillains.length; i++){
+            if(superhero.powerLevel > superhero.authorityVillains[i].powerLevel){
+                console.log(`${superhero.heroName} defeated ${superhero.authorityVillains[i].villainName}.`)
+            } else {
+                console.log(`${superhero.authorityVillains[i].villainName} defeated ${superhero.heroName}.`)
             }
         }
     }
 
 
-},
+}
 
-battleResults()
+superhero.battleResults()
 
 /* haveBirthday:function(){
     
