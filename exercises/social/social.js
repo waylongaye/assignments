@@ -49,6 +49,8 @@ var superhero = {
     battleResults : function(){
         
         for(var i = 0; i < superhero.authorityVillains.length; i++){
+            // console.log(superhero.powerLevel)  <-- Test objects-->
+            // console.log(superhero.authorityVillains[i].villainName)  <-- Test objects-->
             if(superhero.powerLevel > superhero.authorityVillains[i].powerLevel){
                 console.log(`${superhero.heroName} defeated ${superhero.authorityVillains[i].villainName}.`)
             } else {
