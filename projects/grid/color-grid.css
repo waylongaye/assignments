@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+    border: 5px solid white;
+}
+.lineOne {
+    display: block;
+    background-color: #F5C6D6;
+    height: 100px;
+    width: 400px;
+}
+.lineTwo {
+    display: inline-block;
+    background-color: #EE2E84;
+    height: 100px;
+    width: 100px;
+}
+
+.lineThree {
+    display: inline-block;
+    background-color: #85CFD8;
+    height: 100px;
+    width: 200px;
+    margin-top: -10px;
+}
+
+.lineFour1 {
+    display: inline-block;
+    background-color: #8DC63F;
+    height: 100px;
+    width: 300px;
+    margin-top: -10px;
+}
+
+.lineFour2 {
+    display: inline-block;
+    background-color: #E76E34;
+    height: 100px;
+    width: 100px;
+    margin-top: -20px;
+}
