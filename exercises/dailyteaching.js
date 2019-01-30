@@ -54,3 +54,11 @@
         // //whatFlower = "girl scout cookies"
         // goodMood = (whatFlower === "girl scout cookies") ? "happy" : goodMood
         // console.log(goodMood)
+        
+        function getLastItem(whatEver) {
+            var whatEver = [cat, dog, cow]
+            return whatEver.pop()
+            console.log(whatEver)
+    }
+
+    
