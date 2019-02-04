@@ -1,0 +1,15 @@
+h1 {
+
+}
+
+@media (max-width: 1000px), (min-width: 600px){
+    h1{
+        background-color: seagreen;
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+    }
+    
+
+}

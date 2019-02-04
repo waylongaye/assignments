@@ -84,7 +84,7 @@
 // Turns the string into an array.
 // var areaCode = “12345-4444”;
 
-// var asArray = zipCode.split(“-“);
+// var asArray = areaCode.split(“-“);
 
 // console.log(as Array);
 

@@ -1,34 +1,34 @@
 var peopleArray = [
     {
-      name: "Harrison Ford",
+      namez: "Harrison Ford",
       occupation: "Actor"
     },
     {
-      name: "Justin Bieber",
+      namez: "Justin Bieber",
       occupation: "Singer"
     },
     {
-      name: "Vladimir Putin",
+      namez: "Vladimir Putin",
       occupation: "Politician"
     },
     {
-      name: "Oprah",
+      namez: "Oprah",
       occupation: "Entertainer"
     },
     {
-      name: "Anakin Skywalker",
+      namez: "Anakin Skywalker",
       occupation: "Dark Jedi"
     },
     {
-      name: "Luke Skywalker",
+      namez: "Luke Skywalker",
       occupation: "Jedi"
     },
     {
-      name: "Rick",
+      namez: "Rick",
       occupation: "Mad Scientist"
     },
     {
-      name: "Morty",
+      namez: "Morty",
       occupation: "Sidekick"
     }
   ]
@@ -40,8 +40,27 @@ var peopleArray = [
 const name = [];
 const occupation = [];
 
-for(let i = 0; i < peopleArray.length; i += 2){
-    name.push(peopleArray[i].name, peopleArray[i + 1].occupation) // [i + 1] determines the beginning position (Singer)
+// for(let i = 0; i < peopleArray.length; i += 2){
+//     name.push(peopleArray[i].name, peopleArray[i + 1].occupation) // [i + 1] determines the beginning position (Singer)
+// }
+// // this is pushing every other name (starts with "Harrison Ford") and occupation (starting with "Singer")
+// console.log(name)
+
+// var names = [];
+// var occupations = [];
+
+// for(var i = 0; i < peopleArray.length; i++){
+//   names.push(peopleArray[i].namez);
+//   occupations.push(peopleArray[i].occupation);
+// }
+// console.log(name, occupations)
+
+var names = [];
+var occupations =  [];
+
+for(var i = 0; i < peopleArray.length; i++){
+  names.push(peopleArray[i].namez);
+  occupations.push(peopleArray[i].occupation);
 }
-// this is pushing every other name (starts with "Harrison Ford") and occupation (starting with "Singer")
-console.log(name)
+
+console.log(names, occupations)
