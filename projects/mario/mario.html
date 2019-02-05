@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="mario.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 </head>
+
 <body>
-    <li></li>
-    <li></li>
-    <li></li>
+    <div class="container">
+        <div class="enemyBorder">
+            <img id="goomba" height="200px" width="200px" src="https://www.mariowiki.com/images/9/9c/Goomba_-_MarioPartyStarRush.png"
+                id="goombaPic">
+            <h1>
+                Goombas
+            </h1>
+            <div class="firstInput totalInput">
+                <h2>Total Caught: </h2>
+                    <input id="goombaCaught" class="caught" type="number">
+            </div>
+            <h2>Total Price: 
+                <span 
+                id="goomba-price">
+                </span> 
+            </h2>
+        </div>
+        <div class="enemyBorder">
+            <img 
+            id="bob-omb" height="200px" width="200px" src="https://vignette.wikia.nocookie.net/mariokart/images/7/77/Bob-omb_%28Mario_Kart_Wii%29.png/revision/latest?cb=20170323004234">
+            <h1>
+                Bob-ombs
+            </h1>
+            <div class="secondInput totalInput">
+                <h2>
+                    Total Caught:
+                </h2>
+
+                <input 
+                    id="bobCaught" class="caught" type="number">
+            </div>
+            <h2>Total Price: 
+                <span 
+                    id="bob-omb-price">
+                </span> 
+            </h2>
+        </div>
+        <div class="enemyBorder">
+            <img 
+                id="cheep-cheep" height="200px" width="200px" src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/new-super-mario-bros-u/2/29/DeepCheepNSMBU.png?width=325">
+            <h1>
+                Cheep-Cheeps
+            </h1>
+            <div class="thirdInput totalInput">
+            <h2>
+                Total Caught: 
+            </h2>   
+            
+            <input id="cheepCaught" class="caught" type="number">
+
+            </div>
+            <h2>Total Price: 
+                <span id="cheep-cheep-price"</span>
+            </h2>
+        </div>
+    </div>
+        <h1 
+            id="totalText">
+        </h1>
+        <h1 
+            id="total">
+        </h1>
+    </div>
+    
+    <script src="mario.js"
+    ></script>        
 </body>
+
 </html>

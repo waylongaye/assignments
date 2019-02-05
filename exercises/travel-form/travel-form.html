@@ -14,11 +14,11 @@
             Age: <input type="number" name="ageNumber">
         </div>
         <div>
-            Male: <input type="radio" name="maleRadio"> <br>
-            Female: <input type="radio" name="femaleRadio">
+            Male: <input type="radio" name="genders" value="male"> <br>
+            Female: <input type="radio" name="genders" value="female">
         </div>
         <div>
-            Location: <select>
+            Location: <select name='locations'>
                 <option value="Morocco">Morocco</option>
                 <option value="Madagascar">Madagascar</option>
                 <option value="Brazil">Brazil</option>
@@ -29,7 +29,7 @@
             Vegan <input name="restriction" type="checkbox" value="vegan">
             Kosher <input name="restriction" type="checkbox" value="kosher">
             <div>
-                <button type="submit"> Submit </button>
+                <button id="submit" type="submit"> Submit </button>
             </div>
         </div>
     </form>
