@@ -97,3 +97,9 @@
 
 // If multiple sentences, could split on period (“.”)
 // (“”) would do individual characters
+
+var str = "Hello my name is Albert";
+
+var slicer = str.slice(0, 16) ;
+
+console.log(slicer + " Waylon")

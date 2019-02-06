@@ -5,23 +5,23 @@ var goomba = document.getElementById("goombaCaught");
 var bobomb = document.getElementById("bobCaught");
 var cheepcheep = document.getElementById("cheepCaught");
 
-goomba.oninput = function () {
-    var gCaught = document.getElementById("goombaCaught").value;    
-    var totalPrice = goombaPrice * gCaught;
-    document.getElementById("goomba-price").innerHTML = totalPrice;    
-}
+// goomba.oninput = function () {
+//     var gCaught = document.getElementById("goombaCaught").value;    
+//     var totalPrice = goombaPrice * gCaught;
+//     document.getElementById("goomba-price").innerHTML = totalPrice;    
+// }
 
-bobomb.oninput = function () {
-    var bCaught = document.getElementById("bobCaught").value;    
-    var totalPrice = bobombPrice * bCaught;
-    document.getElementById("bob-omb-price").innerHTML = totalPrice;    
-}
+// bobomb.oninput = function () {
+//     var bCaught = document.getElementById("bobCaught").value;    
+//     var totalPrice = bobombPrice * bCaught;
+//     document.getElementById("bob-omb-price").innerHTML = totalPrice;    
+// }
 
-cheepcheep.oninput = function () {
-    var cCaught = document.getElementById("cheepCaught").value;
-    var totalPrice = cheepCheepPrice * cCaught;
-    document.getElementById("cheep-cheep-price").innerHTML = totalPrice;    
-}
+// cheepcheep.oninput = function () {
+//     var cCaught = document.getElementById("cheepCaught").value;
+//     var totalPrice = cheepCheepPrice * cCaught;
+//     document.getElementById("cheep-cheep-price").innerHTML = totalPrice;    
+// }
 
 window.oninput = function () {
     var goomba = document.getElementById("goomba-price").innerHTML;
