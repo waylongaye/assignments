@@ -1,0 +1,19 @@
+body {
+    background-image: url(https://blog.hostbaby.com/wp-content/uploads/2014/03/Trees_1400x900-1024x658.png);
+    position: fixed;
+}
+
+.navBar {
+    background-color: #2e8370;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    border: black;
+    border-radius: 10px;
+}
