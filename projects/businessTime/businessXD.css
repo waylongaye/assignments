@@ -139,22 +139,30 @@ body {
 }
 
 .container1 {
-    border: black 5px solid;
+    /* border: black 5px solid; */
     position: absolute;
     top: 50%;
     right: 30%;
 }
 
 .userInfo {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     justify-content: space-between;
-    width: 500px;
+    width: 400px;
 }
 
 #inputBox {
+    border: #87ada1 5px solid;
     border-radius: 10px;
+    /* text-decoration-color: white; */
 }
 
+.btn {
+    border: #87ada1 5px solid;
+    border-radius: 10px;
+    background-color: #f2dfcd; 
+}
 
   
