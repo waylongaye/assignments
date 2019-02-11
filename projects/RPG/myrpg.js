@@ -27,7 +27,7 @@ function superHero (name){
     this.superpower = Math.floor(Math.random()*10)
 }
 
-function
+
 
 function sideKick(){
 
