@@ -1,0 +1,27 @@
+{
+    "appetizers": [{ 
+        "name": "buffalo wings",
+        "ingredients": ["chicken", "buffalo sauce", "seasoning"]
+        },
+        {
+            "name": ""
+        }
+    ],
+    "cold sandwiches": [{ 
+        "name": "turkey sandwich",
+        "ingredients":["turkey", "lettuce", "tomato", "mayo"]}
+    ],
+    "hot sandwiches":[{ 
+        "name": "sausage croissant",
+        "ingredients": ["sausage", "cheese", "croissant bread"]
+       }],
+    "desserts": [{
+        "name": "banana split",
+        "ingredients": ["ice cream", "banana", "strawberry syrup"]
+       }],
+    "drinks": [{
+        "name": "virgin daquiri",
+        "alcholic": false,
+        "ingredients": ["strawberries", "sugar", "soda"]
+    }]
+}
