@@ -6,7 +6,7 @@ var isAlive = true;
 
 var utilityBelt = []
 
-class Sword {
+class  {
     constructor
     (){
         this.attack = 10;
@@ -38,7 +38,7 @@ function sideKick(){
 
 // Functions :
 
-// Enemy function
+// Encounter
 function encounter (){
     var action = readline.keyIn("Would you like to [e] Escape or [f] Fight? ", {limit: 'ef'})
     if(action === 'r'){
@@ -57,7 +57,7 @@ function encounter (){
     }
 }
 
-// Encounter 
+// Fight
 
 function enemySelect (){
     var random = Math.floor(Math.random()*enemies.length)
