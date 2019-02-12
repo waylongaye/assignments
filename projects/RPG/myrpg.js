@@ -1,28 +1,28 @@
 var readline = require('readline-sync')
 
-var villains = ["", "Fort", "Blazer"]
+var villains = ["Mindshift", "Fort", "Blazer"]
 
 var isAlive = true;
 
 var utilityBelt = []
 
-class  {
-    constructor
-    (){
-        this.attack = 10;
-        this.defense = 10;
-    }
+// class  {
+//     constructor
+//     (){
+//         this.attack = 10;
+//         this.defense = 10;
+//     }
 
-    attackEnemy(enemy){
-        enemy.hp -= this.attack
+//     attackEnemy(enemy){
+//         enemy.hp -= this.attack
 
-    }
-}
+//     }
+// }
 
 
 function superHero (name){
     this.name = name;
-    this.attack = Math.floor(Math.random()*20);
+    this.attack = Math.floor(Math.random()*30);
     this.defense = 20
     this.superpower = Math.floor(Math.random()*10)
 }
@@ -30,7 +30,9 @@ function superHero (name){
 
 
 function sideKick(){
-
+    this.name = name;
+    this.attack = Math.floor(Math.random()*15);
+    this.defense = 10;
 }
 
 
@@ -70,7 +72,7 @@ function fight (enemy){
     var missChance
     if(superHero.defense < 30){
         missChance = 2.5
-    } else if(superHero.defense < 30 && superHero.defense < 61){
+    } else if(superHero.defense < 30 && superHero.defense > 61){
         missChance = 3
     } else {
         missChance = 4
@@ -88,4 +90,9 @@ function fight (enemy){
 
 function miss (){
     console.log("you missed!")
+}
+// fight()
+
+function checkInventory(){
+    console.log(`This is in your utility belt \n${utilityBelt}`) 
 }

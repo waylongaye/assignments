@@ -60,13 +60,13 @@
 
 // Sort - takes two arguments within FUNCTION ex: people.sort(function(a, b)) ... you can use "-" to compare
 
-    var sorted = people.sort(function(a, b){
-        return a.age - b.age // remember to paste an object w/ name & age values
-    })
+    // var sorted = people.sort(function(a, b){
+    //     return a.age - b.age // remember to paste an object w/ name & age values
+    // })
 
     // Reduce - returns 
 
-    var reduced = people.reduce(function(start, person){
+    var reduced = person.reduce(function(start, person){
         console.log(start, person)
         return start + person.age
     }, 0)

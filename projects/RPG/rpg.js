@@ -3,6 +3,7 @@ var readline = require('readline-sync')
 var isAlive = true;
 var hasWon = false;
 var superWeapon = Hero.attack * 2
+// var isEnemyHere = false;
 
 // Character Creation
 
@@ -49,6 +50,10 @@ function walk (){
     }
 }
 
+
+
+// Encounter Function
+
 function encounter (){
     var action = readline.keyIn("Would you like to [r] Run or [f] Fight? ", {limit: 'rf'})
     if(action === 'r'){
@@ -67,7 +72,7 @@ function encounter (){
     }
 }
 
-// Encounter Function
+
 function fight (enemy){
     var random = Math.floor(Math.random()*5)
     if(random < 2.5){
@@ -89,6 +94,13 @@ function miss (){
     console.log('you missed dawg')
 }
 
+function regenerate (enemy){
+    switch(enemy){
+        case enemy1:
+        enemy.health = 20;
+        return; /// continue this for all enemies; be sure to create instances of enemies from constructor function
+    }
+}
 ///////////////////////////////////////
 
 var ask = require('readline-sync')
@@ -108,7 +120,7 @@ function walk(){
      var chance = Math.floor(Math.random() * 4)
      // if number is 1 === attack
      if(chance === 1){
-        console.log("ATTTAAACK")
+        console.log("You've been ambushed!")
      } else {
          console.log("Nothing happened, uneventful day really.")
      }
@@ -118,19 +130,19 @@ function walk(){
 /////////////////
 /// GAME INTRO //
 
-player.name = ask.question("What is your name? ");
-console.log("Welcome " + player.name + " to my super awesome game")
+// player.name = ask.question("What is your name? ");
+// console.log("Welcome " + player.name + " to my super awesome game")
 
-var options = ["Walk"]
+// var options = ["Walk"]
 
 
-/////////////
-// GAME LOOP
-while(player.health > 0){
-    var userChoice = ask.keyInSelect(options, "What would you like to do? ")
-    if(userChoice === 0){
-       walk()
-    } else if(userChoice === 1){
+// /////////////
+// // GAME LOOP
+// while(player.health > 0){
+//     var userChoice = ask.keyInSelect(options, "What would you like to do? ")
+//     if(userChoice === 0){
+//        walk()
+//     } else if(userChoice === 1){
 
-    }
-}
+//     }
+// }
