@@ -25,13 +25,34 @@
 axios.get("https://api.vschool.io/waylon/todo").then(function (res, req) { // get request, need to get data from todo api
     const div = document.getElementById("get"); // grab the div on the index.html and store it the div variable.
     const p = document.createElement("div"); // create a new div and store in the p variable. This div is not on the page yet. It's just in javascript
+    var input = document.createElement("input");
+
+    input.className = "input";
+    input.type = "checkbox"
+
+    input.addEventListener("click", handleChecked)
+    
     for (var i = 0; i < res.data.length; i++){
         
         p.innerText += res.data[i].title // the p div, add the data in the response in between the tags, so it desplays on the page.
-        div.appendChild(p); // add the p div to the div that;s on the page.
+        div.appendChild(p); // add the p div to the div that's on the page.
+        // addStrikeThrough()
 }
+
 });
 
+function addStrikeThrough(){
+    for(var i = 0; i < res.data.completed;i++){
+    if(res.data[i].completed = true){
+        res.data[i].completed.strike()
+    }
+}}
+
+
+function handleChecked(e){
+    console.log("here");
+}
+//     e.target.parentNode.classList.toggle("strikened");
 // axios.get("https://api.vschool.io/waylon/todo").then(function(res, req){
 //     var div = document.getElementById("get");
 //     var p = document.createElement('div');
@@ -40,20 +61,12 @@ axios.get("https://api.vschool.io/waylon/todo").then(function (res, req) { // ge
 //     })
 //     div.appendChild(p);
 // })
-// axios api here
-// response.data.forEach(function(todo){
+// // axios api here
+// res.data.forEach(function(todo){
 //     console.log(todo.title);
 //     console.log(todo.description);
 // })
 
-axios.get("https://api.vschool.io/waylon/todo").then(response =>{
-    renderTodos(response.data)
-
-
-
-    parent.appendChild(input)
-    addStrikeThrough(text, todo.completed) // line 78 as of 02/13
-})
 
 // create function(renderTodos); plugin axios.then data 
 
@@ -72,13 +85,4 @@ axios.get("https://api.vschool.io/waylon/todo").then(response =>{
 // input.addEventListener("click", handleChecked) <--- the second parameter is a function that helps you count the number of checks for tests
 
 // create a function that counts the check; just console.log("checked") within the function
-
-// create a function that strikes through text
-
-function addStrikeThrough(item, isCompleted){
-    if(isCompleted){
-        item.style.textDecoration = "line-through"
-
-    }
-}
 
