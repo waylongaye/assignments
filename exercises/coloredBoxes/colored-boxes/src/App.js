@@ -13,7 +13,7 @@ const App = () => {
   return (
     // component here
     <div style={styles}>
-    <WorkProfiles backgroundColor="moccasin" title="Waylon" />
+    <WorkProfiles backgroundColor="moccasin" />
     <WorkProfiles backgroundColor="green" />
     <WorkProfiles backgroundColor="orange" />
     <WorkProfiles backgroundColor="yellow" />
