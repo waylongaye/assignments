@@ -13,6 +13,7 @@ class componentName extends Component {
                 <Home />
                 <About />
                 <Inspire />
+                
             </div>
         );
     }
