@@ -1,18 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class componentName extends Component {
-    render() {
-        return (
-            <div>
-
-                <div className="header">
-                    <h1>
-                   Welcome to Inspire
-                    </h1>
-                </div>
-            </div>
-        );
-    }
-}
+const componentName = () => {
+    return (
+        <div className="header">
+            <h1>
+                Welcome to Inspire
+            </h1>
+        </div>
+    );
+};
 
 export default componentName;
