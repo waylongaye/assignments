@@ -11,7 +11,7 @@ function Navbar (props){
         <div className="nav">
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
-                <Link to="/inspire">Inspire</Link>
+                <Link to="/inspire">Get Inspired Again</Link>
             </div>
         );
     

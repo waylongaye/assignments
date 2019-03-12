@@ -1,11 +1,9 @@
 import React from 'react';
-
+import Header from './Header'
 const componentName = () => {
     return (
-        <div className="header">
-            <h1>
-                Welcome to Inspire
-            </h1>
+        <div>
+            <Header />
         </div>
     );
 };

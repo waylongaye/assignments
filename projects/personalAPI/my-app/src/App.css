@@ -1,15 +1,47 @@
-.body {
-  margin: 0
+body {
+  margin: 0;
+  background-image: url("https://i1.wp.com/jmicoffee.org/wp-content/uploads/2012/08/webpage-background-1400v21.jpg")
 }
 .header {
   background-color: cadetblue;
   display: flex;
   justify-content: center;
   border-radius: 10px;
+  padding: 50px;
+  margin: 100px;
+  opacity: 0.8;
 }
 
 .nav {
   display: flex;
   justify-content: space-around;
   font-family: Impact;
+}
+
+.categoryBox {
+  display: flex;
+
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  border: 10px;
+  background-color: white;
+  margin: 100;
+  border-style: ridge;
+  border-color: seagreen;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  color: white;
+  border-radius: 10px;
+  border-style: solid;
+  /* border- */
+  text-decoration: none;
 }
