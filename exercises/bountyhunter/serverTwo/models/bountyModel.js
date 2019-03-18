@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const bountySchema = new Schema({
+    //keyOne: valueOne
     firstName: String,
     lastName: String,
     allegiance: {
