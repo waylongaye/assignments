@@ -1,22 +1,22 @@
 const express = require('express');
 const app = express();
 
-const mongoose = rewuire('mongoose');
-const port = indicatedPort || 4204;
+const mongoose = require('mongoose');
+
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017full0-stack-practice', {useNewUrlParser: true}, () => {
+mongoose.connect('mongodb://localhost:27017/garden-game', {useNewUrlParser: true}, () => {
     console.log('Connected to MongoDB!')
 })
 
 .catch(err => console.error(err))
 
-let indicatedPort;
-const port = indicatedPort || 4204;
+
+const port = 4204;
 
 app.listen(port, () => {
     console.log(`All set on port ${port}`)
 })
 
 // Routes
-app.use('/emplyess', require('./routes/employee-routes'))
+app.use('/plants', require('./routes/plantRoutes'))
